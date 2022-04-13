@@ -1,9 +1,17 @@
-import Head from "next/head";
-import Image from "next/image";
-import styles from "../styles/Home.module.css";
+import GradientLayout from "../components/gradientLayout";
 
 const Home = () => {
-  return <div>home</div>;
+  return (
+    <GradientLayout
+      color="blue"
+      roundImage
+      subtitle="profile"
+      title="Paul K"
+      description="11 public playlists"
+    >
+      <div>homepage</div>
+    </GradientLayout>
+  );
 };
 
 export default Home;
